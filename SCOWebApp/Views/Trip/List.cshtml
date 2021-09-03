@@ -1,0 +1,8 @@
+﻿@model TripsListViewModel
+
+    <h1>@Model.CurrentCategory</h1>
+    @foreach (var trip in Model.Trips)
+    {
+        <partial name="_TripCard" model="trip" />
+    }
+

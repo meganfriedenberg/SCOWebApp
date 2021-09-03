@@ -1,0 +1,14 @@
+﻿@model HomeViewModel
+
+
+<partial name="_Slideshow" />
+
+<h2>Trips of the Week</h2>
+<h4>Our weekly selection - for all students!</h4>
+
+<div class="row">
+    @foreach (var trip in Model.TripsOfTheWeek){
+        <partial name="_TripCard" model="trip" />
+    }
+    
+</div>
